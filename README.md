@@ -13,6 +13,8 @@ The code was developed and known to execute successfully given the following sof
 | Oracle Database | 18c XE |
 | Oracle R Enterprise | 1.5.1 |
 | R | 3.3.0 |
+| APEX | 18.2 |
+| ORDS | 18.3 |
 
 ## Required Downloads from Oracle
 
