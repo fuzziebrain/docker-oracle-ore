@@ -117,7 +117,7 @@ character(0)
 
 * Add RStudio.
 * Update Docker image to allow persistence of APEX/ORDS configuration and resources.
-
+* Clean up and reduce image/container size.
 
 ## Credits
 
