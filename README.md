@@ -115,6 +115,7 @@ character(0)
 
 ## TODO
 
+* Add RStudio.
 * Update Docker image to allow persistence of APEX/ORDS configuration and resources.
 
 
