@@ -1,0 +1,6 @@
+local({
+  r <- getOption("repos")
+  r["CRAN"] <- "CRAN_MIRROR_URL"
+  options(repos = r)
+})
+# Don't touch this

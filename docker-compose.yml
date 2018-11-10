@@ -1,0 +1,20 @@
+version: '3.5'
+services:
+  server:
+    container_name: ore-server
+    build: 
+      context: server      
+    image: ore-server
+    networks:
+      - ore_network
+    ports: 
+      - 1521:1521
+      - 5500:5500
+      - 8080:8080
+    environment:
+      - ORACLE_PASSWORD=Oracle18
+      - CRAN_MIRROR_URL=https://cran.r-project.org
+
+networks: 
+  ore_network:
+    name: ore_network
