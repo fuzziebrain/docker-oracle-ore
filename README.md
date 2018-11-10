@@ -46,22 +46,22 @@ $ ./bin/createUser.sh <USERNAME> <PASSWORD>
 Note that the user will require additional privileges, e.g. for use with APEX:
 
 ```sql
-grant create cluster to demo;
-grant create dimension to demo;
-grant create indextype to demo;
-grant create job to demo;
-grant create materialized view to demo;
-grant create operator to demo;
-grant create sequence to demo;
-grant create synonym to demo;
-grant create trigger to demo;
-grant create type to demo;
+grant create cluster to <USERNAME>;
+grant create dimension to <USERNAME>;
+grant create indextype to <USERNAME>;
+grant create job to <USERNAME>;
+grant create materialized view to <USERNAME>;
+grant create operator to <USERNAME>;
+grant create sequence to <USERNAME>;
+grant create synonym to <USERNAME>;
+grant create trigger to <USERNAME>;
+grant create type to <USERNAME>;
 ```
 
 Grant RQADMIN for elevated privileges to create scripts.
 
 ```sql
-grant rqadmin to demo;
+grant rqadmin to <USERNAME>;
 ```
 
 ### 3. Accessing the Database
