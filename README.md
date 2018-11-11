@@ -25,7 +25,6 @@ Download the following files and place them in the directory: `./client/files`:
 Download the following files and place them in the directory: `./server/files`:
 
 * [Oracle 18c XE](https://www.oracle.com/technetwork/database/database-technologies/express-edition/downloads/index.html) - `oracle-database-xe-18c-1.0-1.x86_64.rpm`
-* [Oracle R Enterprise](https://www.oracle.com/technetwork/database/database-technologies/r/r-enterprise/downloads/index.html) Server - `ore-server-linux-x86-64-1.5.1.zip`
 
 ## Running the Services
 
@@ -112,6 +111,24 @@ character(0)
 [1] "SAMPLE"
 > ore.disconnect()
 ```
+
+## Third-party Libraries in Embedded R
+
+To use third-party libraries in embedded R script, they must be installed on the Oracle Database instance. 
+
+On the host:
+
+```bash
+$ docker exec -it -u oracle -e ORAENV_ASK=NO -e ORACLE_SID=XE \
+>   ore-server bash
+```
+
+In the container:
+
+```bash
+$ . oraenv
+$ sh ${ORACLE_HOME}/bin/ORE -e "install.packages('ggplot2')"
+``
 
 ## TODO
 
