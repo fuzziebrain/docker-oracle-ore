@@ -128,7 +128,7 @@ In the container:
 ```bash
 $ . oraenv
 $ sh ${ORACLE_HOME}/bin/ORE -e "install.packages('ggplot2')"
-``
+```
 
 ## TODO
 
